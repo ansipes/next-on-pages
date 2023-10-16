@@ -6,7 +6,7 @@ export const runtime = "edge";
 //   return new Response(JSON.stringify({ name: "Andrew Sipes" }));
 // }
 
-export default async function GET(request) {
+export async function GET(request) {
   try {
     const response = await fetch(
       "https://api.dictionaryapi.dev/api/v2/entries/en/keyboard"
